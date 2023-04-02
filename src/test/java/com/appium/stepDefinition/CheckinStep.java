@@ -63,7 +63,6 @@ public class CheckinStep {
     @Then("Should succesfully create checkin")
     public void shouldSuccesfullyCreateCheckin() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Create question successful']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Add member you want to notifed")
@@ -77,7 +76,6 @@ public class CheckinStep {
     @Then("Should succesfully create checkin with add notifed")
     public void shouldSuccesfullyCreateCheckinWithAddNotifed() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Create question successful']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Select {int} day often want to ask")
@@ -90,7 +88,6 @@ public class CheckinStep {
     @Then("Should succesfully create checkin with inquiries for {int} days")
     public void shouldSuccesfullyCreateCheckinWithInquiriesForDays(int arg0) {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Create question successful']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click icon <")
@@ -105,7 +102,6 @@ public class CheckinStep {
     @Then("Should succes cancel create checkin")
     public void shouldSuccesCancelCreateCheckin() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.view.View[@text='Test']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click checkin want to update")
@@ -138,13 +134,11 @@ public class CheckinStep {
     @Then("Should succesfully update checkin")
     public void shouldSuccesfullyUpdateCheckin() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Update question successful']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @Then("Should succes cancel update checkin")
     public void shouldSuccesCancelUpdateCheckin() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.view.View[@text='Test']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click checkin want to comment")
@@ -169,7 +163,6 @@ public class CheckinStep {
     @Then("Should succesfully add comment checkin")
     public void shouldSuccesfullyAddCommentCheckin() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[3]").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click Add comment")
@@ -194,7 +187,6 @@ public class CheckinStep {
     @Then("Should succesfully add comment bold in checkin")
     public void shouldSuccesfullyAddCommentBoldInCheckin() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[3]").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Add member")
@@ -219,7 +211,6 @@ public class CheckinStep {
     @Then("Should succesfully add member checkin")
     public void shouldSuccesfullyAddMemberCheckin() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Ugik Meirawan']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click icon X checkin")
@@ -248,7 +239,6 @@ public class CheckinStep {
     @Then("Should failed create checkin")
     public void shouldFailedCreateCheckin() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.widget.ImageView").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click checkin want to comment wtihout input anything")
@@ -261,7 +251,6 @@ public class CheckinStep {
     @Then("Shouldn't show up the submit button")
     public void shouldnTShowUpTheSubmitButton() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]/android.view.ViewGroup[1]/android.widget.TextView").isEnabled());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click add new comment")
@@ -285,7 +274,6 @@ public class CheckinStep {
     @Then("Should faield upload pictures and show alert")
     public void shouldFaieldUploadPicturesAndShowAlert() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Failed to attach image, please try again']").isEnabled());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click icon videos")
@@ -297,6 +285,5 @@ public class CheckinStep {
     @Then("Should faield upload videos and show alert")
     public void shouldFaieldUploadVideosAndShowAlert() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.TextView").isEnabled());
-        appiumDriver.terminateApp("staging.cicle");
     }
 }
