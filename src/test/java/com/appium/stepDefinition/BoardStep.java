@@ -64,7 +64,6 @@ public class BoardStep {
     public void shouldSuccesAddList() {
         appiumDriver.findElementByXPath("//android.widget.TextView[@text='Sekolah QA Team']").click();
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Proggres']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
 
     }
 
@@ -92,7 +91,6 @@ public class BoardStep {
     public void shouldSuccesAddCard() {
         appiumDriver.findElementByXPath("//android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']/android.view.ViewGroup[@index='1']").click();
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Proggres']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click button icon X")
@@ -104,7 +102,6 @@ public class BoardStep {
     @Then("Should succes cancel add card")
     public void shouldSuccesCancelAddCard() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Proggres']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click card")
@@ -139,7 +136,6 @@ public class BoardStep {
     @Then("Should succesfully add member")
     public void shouldSuccesfullyAddMember() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='rizal']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click icon X")
@@ -151,7 +147,6 @@ public class BoardStep {
     @Then("Should succesfully cancel add member")
     public void shouldSuccesfullyCancelAddMember() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.view.ViewGroup[@index='11']/android.view.ViewGroup[@index='0']/android.widget.ImageView[@index='0']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click due date")
@@ -188,7 +183,6 @@ public class BoardStep {
     @Then("Should succesfully set due date")
     public void shouldSuccesfullySetDueDate() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Add new Headquarter']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click button REMOVE due date")
@@ -200,7 +194,6 @@ public class BoardStep {
     @Then("Should succesfully remove due date")
     public void shouldSuccesfullyRemoveDueDate() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='MOVE']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click button BATAL")
@@ -212,7 +205,6 @@ public class BoardStep {
     @Then("Should succesfully cancel due date")
     public void shouldSuccesfullyCancelDueDate() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Set due date']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click button plus label")
@@ -250,13 +242,11 @@ public class BoardStep {
     @Then("Should succesfully add label")
     public void shouldSuccesfullyAddLabel() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='MOVE']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @Then("Should succesfully cancel add label")
     public void shouldSuccesfullyCancelAddLabel() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Select Label']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click button select label")
@@ -280,7 +270,6 @@ public class BoardStep {
     @Then("Should succesfully select label")
     public void shouldSuccesfullySelectLabel() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Label']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click button label")
@@ -292,13 +281,11 @@ public class BoardStep {
     @Then("Should succesfully cancel select label")
     public void shouldSuccesfullyCancelSelectLabel() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Select Label']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @Then("Should succesfully remove label")
     public void shouldSuccesfullyRemoveLabel() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Label']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click button MOVE")
@@ -322,7 +309,6 @@ public class BoardStep {
     @Then("Should succesfully move card")
     public void shouldSuccesfullyMoveCard() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='MOVE']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click textfield close")
@@ -334,32 +320,27 @@ public class BoardStep {
     @Then("Should succesfully cancel move card")
     public void shouldSuccesfullyCancelMoveCard() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='BigProjectAM']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @Then("Should failed add list and show alert")
     public void shouldFailedAddListAndShowAlert() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Please fill in the List name']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @Then("Should failed add card and show alert")
     public void shouldFailedAddCardAndShowAlert() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Please fill in the Card name']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @Then("Should failed add label")
     public void shouldFailedAddLabel() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']/android.view.ViewGroup[@index='1']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
 
     @Then("Should failed move card and show alert")
     public void shouldFailedMoveCardAndShowAlert() {
-        Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Select Destination']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
+        Assert.assertTrue(appiumDriver.findElementByXPath("//android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']/android.view.ViewGroup[@index='1']").isDisplayed());
     }
 
     @And("Add new comment wihout filling anything")
@@ -371,7 +352,6 @@ public class BoardStep {
     @Then("Should not be able to send messages")
     public void shouldNotBeAbleToSendMessages() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.view.ViewGroup[@index='12']/android.view.ViewGroup[@index='1']/android.widget.TextView").isEnabled());
-        appiumDriver.terminateApp("staging.cicle");
     }
 }
 
