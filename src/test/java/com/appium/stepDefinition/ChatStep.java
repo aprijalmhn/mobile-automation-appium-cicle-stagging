@@ -148,7 +148,7 @@ public class ChatStep {
 
     @Then("Should failed to send message and not show button send message")
     public void shouldFailedToSendMessageAndNotShowButtonSendMessage() {
-        Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.EditText[@content-desc=\"Type a message...\"]").isDisplayed());
+        Assert.assertTrue(appiumDriver.findElementByXPath("//android.view.ViewGroup[@index='14']/android.widget.TextView[@index='2']").isDisplayed());
         appiumDriver.terminateApp("staging.cicle");
     }
 
@@ -169,7 +169,7 @@ public class ChatStep {
 
     @Then("Should failed to upload pictures")
     public void shouldFailedToUploadPictures(){
-        Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.EditText[@content-desc=\"Type a message...\"]").isDisplayed());
+        Assert.assertTrue(appiumDriver.findElementByXPath("//android.view.ViewGroup[@index='5']/android.view.ViewGroup[@index='1']/android.widget.TextView").isDisplayed());
         appiumDriver.terminateApp("staging.cicle");
     }
 
@@ -185,18 +185,18 @@ public class ChatStep {
 
     @Then("Should failed to upload videos")
     public void shouldFailedToUploadVideos() {
-        Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.EditText[@content-desc=\"Type a message...\"]").isDisplayed());
+        Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Failed upload video']").isDisplayed());
         appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Upload apk file")
     public void uploadApkFile() {
-        appiumDriver.findElementByXPath("//android.widget.TextView[@content-desc=\"Laporan bug\"]").click();
+        appiumDriver.findElementByXPath("//android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']/android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='4']").click();
     }
 
     @Then("Should failed to upload file")
     public void shouldFailedToUploadFile() {
-        Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.Button[@text='OKE']").isDisplayed());
+        Assert.assertTrue(appiumDriver.findElementByXPath("//android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']/android.view.ViewGroup[@index='1']").isDisplayed());
     }
 
 }
