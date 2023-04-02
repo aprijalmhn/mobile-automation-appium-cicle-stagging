@@ -47,7 +47,6 @@ public class ChatStep {
     @Then("Should succes send message")
     public void shouldSuccessSendMessage() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Tester']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Input number message")
@@ -110,7 +109,6 @@ public class ChatStep {
     @Then("Should succes mention member")
     public void shouldSuccesMentionMember() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='rizal']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Send chat")
@@ -121,7 +119,6 @@ public class ChatStep {
     @Then("Should failed to send message")
     public void shouldFailedToSendMessage() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.EditText[@content-desc=\"Type a message...\"]").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Input message of more than {int} words")
@@ -143,13 +140,11 @@ public class ChatStep {
     @Then("Should succes cancel mention member")
     public void shouldSuccesCancelMentionMember() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.EditText[@content-desc=\"Type a message...\"]").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @Then("Should failed to send message and not show button send message")
     public void shouldFailedToSendMessageAndNotShowButtonSendMessage() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.view.ViewGroup[@index='14']/android.widget.TextView[@index='2']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click gallery")
@@ -170,7 +165,6 @@ public class ChatStep {
     @Then("Should failed to upload pictures")
     public void shouldFailedToUploadPictures(){
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.view.ViewGroup[@index='5']/android.view.ViewGroup[@index='1']/android.widget.TextView").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Click document")
@@ -186,7 +180,6 @@ public class ChatStep {
     @Then("Should failed to upload videos")
     public void shouldFailedToUploadVideos() {
         Assert.assertTrue(appiumDriver.findElementByXPath("//android.widget.TextView[@text='Failed upload video']").isDisplayed());
-        appiumDriver.terminateApp("staging.cicle");
     }
 
     @And("Upload apk file")
